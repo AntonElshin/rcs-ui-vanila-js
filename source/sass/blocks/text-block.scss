@@ -1,0 +1,19 @@
+@use "../mixins";
+@use "../variables";
+
+.text-block {
+
+}
+
+.text-block__header {
+  @include mixins.reset-paragraph;
+  margin-top: 34px;
+  color: variables.$text-color-text-block-header;
+  text-transform: uppercase;
+}
+
+.text-block__content {
+  @include mixins.reset-paragraph;
+  margin-top: 36px;
+  margin-left: 34px;
+}

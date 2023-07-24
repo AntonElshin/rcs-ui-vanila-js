@@ -1,0 +1,24 @@
+@use "variables";
+
+@mixin reset-paragraph {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: variables.$text-color-primary;
+  cursor: pointer;
+
+  padding: 8px 12px;
+}

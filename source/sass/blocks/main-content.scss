@@ -1,0 +1,16 @@
+@use "../mixins";
+@use "../variables";
+
+.main-content {
+  padding: 26px 238px 99px 239px;
+}
+
+.main-content__button {
+  @include mixins.button;
+  display: block;
+  margin: 72px auto 0;
+  max-width: 323px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid variables.$text-color-primary;
+}

@@ -1,0 +1,14 @@
+// переменные и миксины
+@use "./variables";
+@use "./mixins";
+
+// базовые свойства
+@use "./base/fonts";
+@use "./base/base";
+
+// блоки компонентов
+@use "./blocks/main-content";
+@use "./blocks/main-header";
+@use "./blocks/main-wrapper";
+@use "./blocks/page";
+@use "./blocks/text-block";

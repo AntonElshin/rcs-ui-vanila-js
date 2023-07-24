@@ -1,0 +1,17 @@
+.main-wrapper::before {
+  margin-top: 8px;
+}
+
+.main-wrapper::after {
+  margin-bottom: 10px;
+}
+
+.main-wrapper::before, .main-wrapper::after {
+  display: block;
+  width: 100%;
+  min-height: 35px;
+  background-image: url("../../img/backgrounds/ornament.webp");
+  background-repeat: repeat-x;
+  background-position: center;
+  content: "";
+}

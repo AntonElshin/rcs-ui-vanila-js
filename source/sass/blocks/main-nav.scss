@@ -1,0 +1,56 @@
+@use "../mixins";
+@use "../variables";
+
+.main-nav {
+  padding: 60px 66px 0 75px;
+}
+
+.main-nav__list {
+  @include mixins.reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-nav__item {
+  min-height: 21px;
+  min-width: 21px;
+}
+
+.main-nav__item--personal {
+  background-image: url("../../img/navigation/personal.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-nav__item--toggle {
+  position: relative;
+}
+
+.main-nav__toggle {
+  right: 21px;
+  top: 17px;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  border: none;
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 7px 0 0 #ffffff, 0 14px 0 0 #ffffff;
+}
+
+.main-nav__link {
+  display: block;
+  min-height: 21px;
+}

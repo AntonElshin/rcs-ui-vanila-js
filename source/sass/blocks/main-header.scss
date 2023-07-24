@@ -1,7 +1,75 @@
+@use "../mixins";
+
+.main-header {
+  position: relative;
+}
+
 .main-header--index {
   background-image: url("../../img/backgrounds/index.webp");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 658px;
+}
+
+.main-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.main-header__image {
+  display: block;
+  min-height: 76px;
+  min-width: 58px;
+  border: 1px solid #ffffff;
+  margin-top: 60px;
+}
+
+.main-header__text {
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: #ffffff;
+}
+
+.main-header__welcome {
+  margin: 215px auto 0;
+  width: 441px;
+  color: #ffffff;
+}
+
+.main-header__welcome-title {
+  @include mixins.reset-paragraph;
+  min-height: 89px;
+  font-size: 40px;
+  line-height: 45px;
+  font-family: "DS Yermak_D", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+}
+
+.main-header__welcome-text {
+  @include mixins.reset-paragraph;
+  font-size: 28px;
+  font-family: "Calligraph TYGRA", "Arial", sans-serif;
+}
+
+.main-header__welcome-link {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  min-height: 40px;
+  width: 229px;
+  border: 1px solid #ffffff;
+  margin: 7px auto 0;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Triod Postnaja", "Arial", sans-serif;
+  padding-top: 10px;
 }
